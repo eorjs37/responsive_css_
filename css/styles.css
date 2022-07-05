@@ -5,7 +5,8 @@ header{
 }
 
 .header{
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 10px;
     position: relative;
@@ -28,10 +29,57 @@ header{
 
 /*######################### welcome #########################*/
 section.welcome{
-    top: 30%;
+    top: 8%;
+    position: absolute;
+    width: 100%;
 }
 
-section.welcome > .welcome-inner{
-    width: 1280px;
+section.welcome > .welcome-bgimage{
+    max-width: 1920px;
+    width: 100%;
+    margin:0 auto;
+    background: url(../images/slide-welcome-01.png) no-repeat;
+    height: 90vh;
+}
+
+section.welcome > .welcome-bgimage > .welcome-inner{
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.welcome-inner > .welcome-text{
+    position: absolute;
+    top: 125px;
+    left: 30px;
+}
+
+.welcome-text > .title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.welcome-text  > .sub-title{
+    margin-top: 35px;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.welcome-text > .desc{
+    margin-top: 25px;
+    line-height: 1.2em;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 100px;
+    line-height: 30px;
+}
+
+.welcome-text > .btn-group{
+    margin-top: 30px;
+    text-align: center;
 }
