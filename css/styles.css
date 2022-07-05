@@ -2,14 +2,14 @@
 header{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .header{
     max-width: 1280px;
-    width: 100%;
+    width: 100%;    
     margin: 0 auto;
     padding-top: 10px;
-    position: relative;
     overflow: hidden;
 }
 
@@ -29,17 +29,19 @@ header{
 
 /*######################### welcome #########################*/
 section.welcome{
-    top: 8%;
-    position: absolute;
+    position: relative;
     width: 100%;
+    height: 90vh;
 }
 
 section.welcome > .welcome-bgimage{
     max-width: 1920px;
     width: 100%;
     margin:0 auto;
+    position: absolute;
+    top: 80px;
     background: url(../images/slide-welcome-01.png) no-repeat;
-    height: 90vh;
+    height: 100%;
 }
 
 section.welcome > .welcome-bgimage > .welcome-inner{
@@ -82,4 +84,41 @@ section.welcome > .welcome-bgimage > .welcome-inner{
 .welcome-text > .btn-group{
     margin-top: 30px;
     text-align: center;
+}
+
+.welcome-text > .btn-group > button{
+    transition: all linear 0.5s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.welcome-text > .btn-group > button:hover{
+    transform: translateY(-5px);
+    
+}
+
+.welcome-text > .btn-group > button.ceo-guide{
+    background-color: #87CEEB;
+    
+}
+
+.welcome-text > .btn-group > button.user-guide{
+    background-color: #00FA9A;
+}
+
+/*######################### slick #########################*/
+section.slick{
+    width: 100%;
+    position: absolute;
+}
+
+section.slick > .slick-inner{
+    max-width: 1280px;
+    width: 100%
 }
