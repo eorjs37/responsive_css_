@@ -1,8 +1,15 @@
+
+/* slick css ####################*/
+.slick-next, .slick-arrow{
+    display: none !important;
+}
+
 /*######################### header #########################*/
 header{
     position: fixed;
     width: 100%;
     z-index: 1;
+    top: 0px;
 }
 
 .header{
@@ -27,51 +34,40 @@ header{
     padding: 0 10px;
 }
 
-/*######################### welcome #########################*/
-section.welcome{
-    position: relative;
-    width: 100%;
-    height: 90vh;
-}
-
-section.welcome > .welcome-bgimage{
+/*######################### slick #########################*/
+section.slick{
     max-width: 1920px;
     width: 100%;
-    margin:0 auto;
-    position: absolute;
-    top: 80px;
-    background: url(../images/slide-welcome-01.png) no-repeat;
-    height: 100%;
-}
-
-section.welcome > .welcome-bgimage > .welcome-inner{
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
     position: relative;
-    height: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
-.welcome-inner > .welcome-text{
+
+.slick-slider > .slick-list{
+    height: 85vh;
+}
+
+section.slick > .slick-text{
     position: absolute;
-    top: 125px;
-    left: 30px;
+    top: 120px;
+    left: 10%;
 }
 
-.welcome-text > .title{
+.slick-text > .title{
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
 }
 
-.welcome-text  > .sub-title{
+.slick-text > .sub-title{
     margin-top: 35px;
     font-size: 65px;
     font-weight: 700;
     line-height: 65px;
 }
 
-.welcome-text > .desc{
+.slick-text > .desc{
     margin-top: 25px;
     line-height: 1.2em;
     font-size: 18px;
@@ -81,12 +77,13 @@ section.welcome > .welcome-bgimage > .welcome-inner{
     line-height: 30px;
 }
 
-.welcome-text > .btn-group{
+
+.slick-text > .btn-group{
     margin-top: 30px;
     text-align: center;
 }
 
-.welcome-text > .btn-group > button{
+.slick-text > .btn-group > button{
     transition: all linear 0.5s;
     padding: 10px 20px;
     border: none;
@@ -98,27 +95,16 @@ section.welcome > .welcome-bgimage > .welcome-inner{
     font-weight: 600;
 }
 
-.welcome-text > .btn-group > button:hover{
+.slick-text > .btn-group > button:hover{
     transform: translateY(-5px);
     
 }
 
-.welcome-text > .btn-group > button.ceo-guide{
+.slick-text > .btn-group > button.ceo-guide{
     background-color: #87CEEB;
     
 }
 
-.welcome-text > .btn-group > button.user-guide{
+.slick-text > .btn-group > button.user-guide{
     background-color: #00FA9A;
-}
-
-/*######################### slick #########################*/
-section.slick{
-    width: 100%;
-    position: absolute;
-}
-
-section.slick > .slick-inner{
-    max-width: 1280px;
-    width: 100%
 }
