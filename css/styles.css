@@ -20,12 +20,20 @@ header{
     overflow: hidden;
 }
 
+.header > .hambugercheckbox{
+    display: none;
+}
+
 .header > .logo{
     float: left;
 }
 
 .header > .list{
     float: right;
+}
+
+.header > .hambugerbar{
+    display: none;
 }
 
 .header > .list > ul > li{
