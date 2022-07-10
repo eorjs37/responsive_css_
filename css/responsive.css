@@ -13,47 +13,35 @@
         padding-left: 20px;
     }
 
-   
-
-    .header > .hambugercheckbox + label{
-        display: inline-block;
-        height: 20px;
-        width: 30px;
-    }
-
-    .header > .hambugercheckbox + label > .hambugerbar{
+    .header > .hambugerbar{
         float: left;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 20px;
+        height: 24px;
         width: 100%;
         position: relative;
     }
 
-    .header > .hambugercheckbox + label > .hambugerbar > .line{
+    .header > .hambugerbar > .line{
         display: inline-block;
         width: 30px;
         height: 3px;
         background-color: #000;
         border-radius: 1px;
-        transition: all 0.4s ease-in-out;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
     }
 
-    .header > .hambugercheckbox:checked + label > .hambugerbar > .line:nth-child(1){
-        transform: rotate(45deg);
-        position: absolute;
-        top: 10px;
+    .header > .hambugerbar.active > .line:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
     }
 
-    .header > .hambugercheckbox:checked + label > .hambugerbar > .line:nth-child(2){
-        transform: rotate(45deg);
-        display: none;
+    .header > .hambugerbar.active > .line:nth-child(2){
+        opacity: 0;
     }
 
-    .header > .hambugercheckbox:checked + label > .hambugerbar > .line:nth-child(3){
-        transform: rotate(-45deg);
-        position: absolute;
-        top: 10px;
+    .header > .hambugerbar.active > .line:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
     }
 }
