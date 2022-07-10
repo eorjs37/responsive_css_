@@ -4,6 +4,10 @@
     display: none;
 }
 
+.side-bar{
+    display: none;
+}
+
 /*#################### slick css ####################*/
 .slick-next, .slick-arrow{
     display: none !important;
@@ -76,7 +80,16 @@ section.slick > .slick-text{
     margin-top: 35px;
     font-size: 65px;
     font-weight: 700;
-    line-height: 65px;
+    line-height: 68px;
+}
+
+.slick-text > .type-effect{
+    margin-top: 35px;
+    display: block;
+    font-size: 40px;
+    color: #eb4d4b;
+    text-align: center;
+    font-style: normal;
 }
 
 .slick-text > .desc{

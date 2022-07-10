@@ -16,12 +16,31 @@
 
     .side-bar{
         position: fixed; /* Sit on top of the page content */   
-        width: 225px;
+        display: inline-block;
+        width: 200px;
         height: 100%;
         top: 0;
-        left: 0;
+        left: -200px;
         z-index: 3;
         background-color: #fff;
+        transition: all .3s linear;
+    }
+
+    .side-bar > .menu-list{
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    .side-bar > .menu-list > .menu{
+        line-height: 1.2em;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .side-bar > .menu-list > .menu:nth-child(2),.menu:nth-child(3){
+        padding-top: 10px;
     }
 
     /*######################### header #########################*/
