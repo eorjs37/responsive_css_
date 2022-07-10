@@ -1,5 +1,10 @@
 
-/* slick css ####################*/
+/*#################### common ####################*/
+#overlay{
+    display: none;
+}
+
+/*#################### slick css ####################*/
 .slick-next, .slick-arrow{
     display: none !important;
 }
@@ -8,7 +13,6 @@
 header{
     position: fixed;
     width: 100%;
-    z-index: 1;
     top: 0px;
 }
 
