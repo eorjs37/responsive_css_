@@ -16,7 +16,7 @@ const hambugerEvent = () => {
   });
 };
 const typeIt = () => {
-  new TypeIt(".type-effect").type("This is my first string!").delete().pause(1000).type("Plus a little more.").delete().pause(1000).type("Plus a little more2.").go();
+  new TypeIt(".type-effect").type("Business strategy.").delete().pause(1000).type("Innovation Plan.").delete().pause(1000).type("Creative Idea.").go();
 };
 
 window.onload = () => {
