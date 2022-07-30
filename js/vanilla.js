@@ -15,7 +15,11 @@ const hambugerEvent = () => {
     }
   });
 };
+const typeIt = () => {
+  new TypeIt(".type-effect").type("This is my first string!").delete().pause(1000).type("Plus a little more.").delete().pause(1000).type("Plus a little more2.").go();
+};
 
 window.onload = () => {
   hambugerEvent();
+  typeIt();
 };
