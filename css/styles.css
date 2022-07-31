@@ -18,6 +18,13 @@ header{
     position: fixed;
     width: 100%;
     top: 0px;
+    height: 60px;
+    z-index: 2;
+}
+
+header.active{
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
 }
 
 .header{
@@ -57,7 +64,7 @@ section.slick{
     width: 100%;
     position: relative;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 
@@ -137,4 +144,12 @@ section.slick > .slick-text{
 
 .slick-text > .type-effect{
     font-weight: 700;
+}
+
+/*############################# ceo-access #############################*/
+
+section.ceo-access{
+    max-width: 1920px;
+    width: 100%;
+    height: 900px;
 }
