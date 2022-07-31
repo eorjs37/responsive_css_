@@ -34,6 +34,7 @@ header{
 
 .header > .logo{
     float: left;
+    cursor: pointer;
 }
 
 .header > .list{
@@ -132,4 +133,8 @@ section.slick > .slick-text{
 
 .slick-text > .btn-group > button.user-guide{
     background-color: #00FA9A;
+}
+
+.slick-text > .type-effect{
+    font-weight: 700;
 }
