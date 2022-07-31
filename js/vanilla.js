@@ -21,7 +21,6 @@ const typeIt = () => {
 const boxShadow = () => {
   const header = document.getElementById("header");
   if (window.scrollY > 0) {
-    console.log(header);
     header.classList.add("active");
   } else {
     header.classList.remove("active");
