@@ -339,17 +339,27 @@ section.ceo-access .ceo-inner {
   margin-top: 35px;
 }
 
+/* input checked btn1*/
+
 input[id="btn1"]:checked ~ .tab-btn > label.btn1 > h1.icon {
   background-color: #34495e;
 }
 input[id="btn1"]:checked ~ .tab-btn > label.btn1 > h1.icon > img {
   filter: invert();
 }
-
 input[id="btn1"]:checked ~ .tab-btn > label.btn1 > h1[id="btn1-text"] {
   color: #34495e;
 }
 
+input[id="btn1"] ~ .tab-desc > .desc1 {
+  display: none;
+}
+
+input[id="btn1"]:checked ~ .tab-desc > .desc1 {
+  display: initial;
+}
+
+/* input checked btn2 */
 input[id="btn2"]:checked ~ .tab-btn > label.btn2 > h1.icon {
   background-color: #34495e;
 }
@@ -360,6 +370,15 @@ input[id="btn2"]:checked ~ .tab-btn > label.btn2 > h1[id="btn2-text"] {
   color: #34495e;
 }
 
+input[id="btn2"] ~ .tab-desc > .desc2 {
+  display: none;
+}
+
+input[id="btn2"]:checked ~ .tab-desc > .desc2 {
+  display: initial;
+}
+
+/* input checked btn3 */
 input[id="btn3"]:checked ~ .tab-btn > label.btn3 > h1.icon {
   background-color: #34495e;
 }
@@ -368,4 +387,55 @@ input[id="btn3"]:checked ~ .tab-btn > label.btn3 > h1.icon > img {
 }
 input[id="btn3"]:checked ~ .tab-btn > label.btn3 > h1[id="btn3-text"] {
   color: #34495e;
+}
+
+input[id="btn3"] ~ .tab-desc > .desc3 {
+  display: none;
+}
+
+input[id="btn3"]:checked ~ .tab-desc > .desc3 {
+  display: initial;
+}
+
+/*############################# feature #############################*/
+.feature {
+  max-width: 1920px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.feature-inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.community {
+  text-align: center;
+}
+
+.community > .title {
+  font-size: 44px;
+  position: relative;
+  line-height: 1.3em;
+}
+
+.community > .title::after {
+  content: "";
+  position: absolute;
+  top: 72px;
+  display: inline-block;
+  width: 75px;
+  height: 4px;
+  background: linear-gradient(to right, #1f8de6, #5ed6fe);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.community > .sub-title {
+  font-size: 20px;
+  margin-top: 65px;
 }
